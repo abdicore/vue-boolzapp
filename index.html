@@ -48,7 +48,13 @@
                         <span class="input-group-text" id="addon-wrapping"><i class="fa-solid fa-magnifying-glass"></i></span>
                         <input type="text" class="form-control" placeholder="Cerca o inizia una nuova chat" aria-label="Username" aria-describedby="addon-wrapping">
                       </div></div>
-                    <div class="contacts"></div>
+                    <div class="contacts">
+                        <ul>
+                            <li v-for="contact in contacts" :key="contact.name">
+                                <img :src="contact.avatar" alt="Avatar di {{ contact.name }}">
+                                {{ contact.name }}
+                        </ul>
+                    </div>
                 </section>
                 <section class="message">
                     <div class="header-panel">

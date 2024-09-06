@@ -71,6 +71,7 @@ body {
 }
 
 .contacts {
+    overflow: auto;
     height: calc(100% - 200px);
     background-color: white
 }
@@ -96,6 +97,19 @@ body {
     margin-right:  10px;
     color: #b1b1b1;
     font-size: 20px;
+}
+
+li {
+    height: 100px;
+    align-items: center;
+    display: flex;
+    list-style-type: none;
+    border-top: 1px solid;
+}
+
+li img {
+    height: 50px;
+    border-radius: 50%;
 }
 
 
