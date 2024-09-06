@@ -121,6 +121,9 @@ body {
 }
 
 .footer {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
     height: 80px;
     background-color: #f3eeea;
 }
@@ -145,4 +148,14 @@ body {
 .oggetto-panel {
     display: flex;
     align-items: center;
+}
+
+.footer input {
+    height: 50px;
+    width: 700px;
+}
+
+.footer i {
+    font-size: 20px;
+    color: #6b7174;
 }
