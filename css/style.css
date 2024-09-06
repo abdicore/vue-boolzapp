@@ -104,11 +104,14 @@ body {
 .message {
     width: 65%;
     background-color: bisque;
+
 }
 
 .header-panel {
     height: 80px;
     background-color: #eaeaea;
+    display: flex;
+    justify-content: space-between;
 }
 
 .message-panel {
@@ -122,4 +125,24 @@ body {
     background-color: #f3eeea;
 }
 
+.header-panel i {
+    margin-right:  10px;
+    color: #b1b1b1;
+    font-size: 20px;
+    display: flex;
+}
 
+.header-panel img {
+    height: 60px;
+    border-radius: 50%;
+}
+
+.soggetto-panel {
+    display: flex;
+    align-items: center;
+}
+
+.oggetto-panel {
+    display: flex;
+    align-items: center;
+}
