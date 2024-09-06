@@ -45,6 +45,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
 
 .notifications {
@@ -52,8 +53,25 @@ body {
     background-color: #8edafc;
 }
 
+.search {
+    height: 40px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    margin-left: 10px;
+    width: 370px;
+}
+
+.search i {
+    margin-left: 10px;
+    
+}
+
 .contacts {
-    height: calc(100% - 160px);
+    height: calc(100% - 200px);
     background-color: white
 }
 
@@ -63,7 +81,7 @@ body {
 }
 
 .header-side h2 {
-    font-size: 25px;
+    font-size: 20px;
 }
 .soggetto {
     display: flex;
@@ -73,6 +91,11 @@ body {
 .oggetto {
     display: flex;
     align-items: center;
+}
+.header-side i {
+    margin-right:  10px;
+    color: #b1b1b1;
+    font-size: 20px;
 }
 
 
