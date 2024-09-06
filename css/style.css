@@ -1,0 +1,75 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* generics */
+body {
+    font-family:sans-serif;
+    position: relative;
+    background-color: lightgrey;
+}
+
+/* pannello centrale */
+
+.barra {
+    height: 200px;
+    background-color: green;
+}
+
+.container {
+    width: 1200px;
+    height: 900px;
+    background-color: antiquewhite;
+    margin: 0 auto;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.side-bar {
+    width: 35%;
+    background-color: aqua;
+}
+
+.message {
+    width: 65%;
+    background-color: bisque;
+}
+
+.header-side {
+    height: 80px;
+    background-color: blue;
+}
+
+.notifications {
+    height: 80px;
+    background-color: rgb(19, 97, 97);
+}
+
+.contacts {
+    height: calc(100% - 160px);
+    background-color: white
+}
+
+.header-panel {
+    height: 80px;
+    background-color: blueviolet;
+}
+
+.message-panel {
+    height: calc(100% - 160px);
+    background-image: url(../img/mine.png);
+    object-fit: contain;
+}
+
+.footer {
+    height: 80px;
+    background-color: beige;
+}
+
+
