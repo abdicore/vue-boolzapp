@@ -31,24 +31,25 @@ body {
     display: flex;
 }
 
+
+/* side-bar */
 .side-bar {
     width: 35%;
     background-color: aqua;
-}
-
-.message {
-    width: 65%;
-    background-color: bisque;
+    border-right: 1px solid gray;
 }
 
 .header-side {
     height: 80px;
-    background-color: blue;
+    background-color: #eaeaea;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 .notifications {
     height: 80px;
-    background-color: rgb(19, 97, 97);
+    background-color: #8edafc;
 }
 
 .contacts {
@@ -56,9 +57,35 @@ body {
     background-color: white
 }
 
+.header-side img {
+    height: 60px;
+    border-radius: 50%;
+}
+
+.header-side h2 {
+    font-size: 25px;
+}
+.soggetto {
+    display: flex;
+    align-items: center;
+}
+
+.oggetto {
+    display: flex;
+    align-items: center;
+}
+
+
+/* pannello messaggi */
+
+.message {
+    width: 65%;
+    background-color: bisque;
+}
+
 .header-panel {
     height: 80px;
-    background-color: blueviolet;
+    background-color: #eaeaea;
 }
 
 .message-panel {
@@ -69,7 +96,7 @@ body {
 
 .footer {
     height: 80px;
-    background-color: beige;
+    background-color: #f3eeea;
 }
 
 
