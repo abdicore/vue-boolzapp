@@ -129,6 +129,7 @@ li img {
 }
 
 .message-panel {
+    position: relative;
     height: calc(100% - 160px);
     background-image: url(../img/mine.png);
     object-fit: contain;
@@ -172,4 +173,44 @@ li img {
 .footer i {
     font-size: 20px;
     color: #6b7174;
+}
+
+.sent {
+    padding: 10px 15px;
+    border-radius: 10px;
+    width: 300px;
+    background-color: #d5f9ba;
+    position: absolute;
+    right: 20px;
+    bottom: 180px;
+}
+
+.sent2 {
+    padding: 10px 15px;
+    border-radius: 10px;
+    width: 300px;
+    background-color: #d5f9ba;
+    position: absolute;
+    right: 20px;
+    bottom: 100px;
+
+}
+
+.received {
+    padding: 10px 15px;
+    width: 300px;
+    background-color: #ffffff;
+    position: absolute;
+    left: 15px;
+    border-radius: 10px;
+    bottom: 15px;
+}
+span {
+    font-size: 8px;
+    color: lightslategray;
+}
+
+p {
+    display: flex;
+    flex-direction: column;
 }

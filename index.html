@@ -72,7 +72,30 @@
                             <i class="fa-solid fa-ellipsis-vertical"></i>
                         </div>
                     </div>
-                    <div class="message-panel"></div>
+                    <div class="message-panel">
+                        <div class="sent">
+                            <p>{{ contacts[0].messages[0].message }}
+                                <span>
+                                {{ contacts[0].messages[0].date }}
+                                </span>
+                            </p>
+                        </div>
+                        <div class="sent2">
+                            <p>{{ contacts[0].messages[1].message }}
+                               <span>
+                                {{ contacts[0].messages[1].date }}
+                               </span> 
+                            </p>
+
+                        </div>
+                        <div class="received">
+                            <p>{{ contacts[0].messages[2].message }}
+                                <span>
+                                {{ contacts[0].messages[2].date }}
+                                </span>
+                            </p>
+                        </div>
+                    </div>
                     <div class="footer">
                         <i class="fa-regular fa-face-smile"></i>
                         <input type="text" class="form-control" placeholder="Scrivi un messaggio" aria-label="Username" aria-describedby="addon-wrapping">
