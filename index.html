@@ -76,13 +76,12 @@
                     <div class="message-panel">
                         <div class="">
                             <ul>
-                                <li class="sent" v-for="message in contacts[0].messages">
-                                    <p>{{ message.message }}
-                                        <span>
-                                            {{ message.date }}
-                                        </span>
-                                    </p>
-                                </li>
+                                <li v-for="message in contacts[0].messages"
+                                :class="{'sent': message.status === 'sent', 'received': message.status === 'received'}">
+                                <p>{{ message.message }}
+                                    <span>{{ message.date }}</span>
+                                </p>
+                            </li>
                             </ul>
                         </div>
                     </div>
