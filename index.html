@@ -53,6 +53,7 @@
                             <li v-for="contact in contacts" :key="contact.name">
                                 <img :src="contact.avatar" alt="Avatar di {{ contact.name }}">
                                 {{ contact.name }}
+                            </li>
                         </ul>
                     </div>
                 </section>
@@ -73,27 +74,16 @@
                         </div>
                     </div>
                     <div class="message-panel">
-                        <div class="sent">
-                            <p>{{ contacts[0].messages[0].message }}
-                                <span>
-                                {{ contacts[0].messages[0].date }}
-                                </span>
-                            </p>
-                        </div>
-                        <div class="sent2">
-                            <p>{{ contacts[0].messages[1].message }}
-                               <span>
-                                {{ contacts[0].messages[1].date }}
-                               </span> 
-                            </p>
-
-                        </div>
-                        <div class="received">
-                            <p>{{ contacts[0].messages[2].message }}
-                                <span>
-                                {{ contacts[0].messages[2].date }}
-                                </span>
-                            </p>
+                        <div class="">
+                            <ul>
+                                <li class="sent" v-for="message in contacts[0].messages">
+                                    <p>{{ message.message }}
+                                        <span>
+                                            {{ message.date }}
+                                        </span>
+                                    </p>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                     <div class="footer">

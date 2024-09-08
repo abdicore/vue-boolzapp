@@ -12,6 +12,8 @@ body {
     background-color: lightgrey;
 }
 
+
+
 /* pannello centrale */
 
 .barra {
@@ -40,6 +42,7 @@ body {
 }
 
 .header-side {
+    padding: 10px;
     height: 80px;
     background-color: #eaeaea;
     display: flex;
@@ -100,10 +103,14 @@ body {
 }
 
 li {
+    list-style-type: none;
+}
+
+.contacts li {
+    padding: 10px;
     height: 100px;
     align-items: center;
     display: flex;
-    list-style-type: none;
     border-top: 1px solid;
 }
 
@@ -122,6 +129,7 @@ li img {
 }
 
 .header-panel {
+    padding: 10px;
     height: 80px;
     background-color: #eaeaea;
     display: flex;
@@ -176,25 +184,15 @@ li img {
 }
 
 .sent {
-    padding: 10px 15px;
-    border-radius: 10px;
-    width: 300px;
-    background-color: #d5f9ba;
-    position: absolute;
-    right: 20px;
-    bottom: 180px;
+      margin-left: 460px;
+      margin-bottom: 15px;
+      padding: 10px 15px;
+      border-radius: 10px;
+      width: 300px;
+      background-color: #d5f9ba;
 }
 
-.sent2 {
-    padding: 10px 15px;
-    border-radius: 10px;
-    width: 300px;
-    background-color: #d5f9ba;
-    position: absolute;
-    right: 20px;
-    bottom: 100px;
 
-}
 
 .received {
     padding: 10px 15px;
