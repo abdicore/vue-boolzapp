@@ -6,7 +6,7 @@ createApp({
     now = DateTime.now().setLocale('it').toFormat('t').toString();
     return {
 
-      message: 'Hello Vue!',
+      mostraImput: false,
       newMessage: '',
       contacts: [
         {
@@ -198,6 +198,9 @@ createApp({
                 })
             }, 1000);
     },
+    toggleInput() {
+        this.mostraInput = !this.mostraInput;  
+      }
     },
 
 

@@ -68,7 +68,8 @@
 
                         </div>
                         <div class="oggetto-panel">
-                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i @click="toggleInput" class="fa-solid fa-magnifying-glass"></i>
+                            <input v-if="mostraImput" @keyup.enter="" type="text" class="form-control" placeholder="Digita un nome">
                             <i class="fa-solid fa-paperclip"></i>
                             <i class="fa-solid fa-ellipsis-vertical"></i>
                         </div>
