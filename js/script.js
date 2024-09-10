@@ -4,6 +4,7 @@ createApp({
   data() {
     return {
       message: 'Hello Vue!',
+      newMessage: '',
       contacts: [
         {
             name: 'Michele',
@@ -174,7 +175,19 @@ createApp({
   methods: {
     selectContact(index) {
         this.activeIndex = index;
-    }
-}
+        },
+    addMEssage(content) {
+        this.contacts[this.activeIndex].messages.push(
+            {
+                date: '10/01/2020 15:51:00',
+                message: content,
+                status: 'sent'
+            }
+        )
+        this.newMessage = '';
+        },
+    },
+
+
 }
 ).mount('#app')

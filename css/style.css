@@ -196,13 +196,12 @@ li img {
 
 
 .received {
+    margin-left: 15px;
+    margin-top: 15px;
     padding: 10px 15px;
     width: 300px;
     background-color: #ffffff;
-    position: absolute;
-    left: 15px;
     border-radius: 10px;
-    bottom: 15px;
 }
 span {
     font-size: 8px;
