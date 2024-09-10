@@ -56,6 +56,9 @@ i {
 }
 
 .notifications {
+    padding-left: 10px;
+    align-items: center;
+    display: flex;
     height: 80px;
     background-color: #8edafc;
 }
@@ -122,6 +125,19 @@ li {
 li img {
     height: 50px;
     border-radius: 50%;
+}
+
+.bell-ring {
+    margin-right: 10px;
+    font-size: 22px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+    padding: 25px;
+    border-radius: 50%;
+    background-color: #ffffff;
 }
 
 
