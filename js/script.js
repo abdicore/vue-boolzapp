@@ -202,6 +202,11 @@ createApp({
         this.mostraInput = !this.mostraInput;  
       }
     },
+    computed: {
+        filterName() {
+          return this.numbers.filter()
+        }
+      }
 
 
 }

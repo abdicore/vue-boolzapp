@@ -18,6 +18,8 @@ i {
 
 
 
+
+
 /* pannello centrale */
 
 .barra {
@@ -71,8 +73,9 @@ i {
 }
 
 .search input {
+    padding: 10px 5px;
     margin-left: 10px;
-    width: 370px;
+    width: 375px;
 }
 
 .search i {
