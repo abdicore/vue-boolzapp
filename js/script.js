@@ -2,7 +2,10 @@ const { createApp } = Vue
 
 createApp({
   data() {
+    DateTime = luxon.DateTime,
+    now = DateTime.now().setLocale('it').toFormat('t').toString();
     return {
+
       message: 'Hello Vue!',
       newMessage: '',
       contacts: [
@@ -179,7 +182,7 @@ createApp({
     addMEssage(content) {
          this.contacts[this.activeIndex].messages.push(
             {
-                date: '10/01/2020 15:51:00',
+                date: now,
                 message: content,
                 status: 'sent'
             }
@@ -189,7 +192,7 @@ createApp({
          setTimeout(() => {
             this.contacts[this.activeIndex].messages.push(
                 {
-              date: '10/01/2020 15:51:00',
+              date: now,
               message: 'ok',
               status: 'received'
                 })
