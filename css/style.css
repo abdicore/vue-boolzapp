@@ -107,6 +107,7 @@ li {
 }
 
 .contacts li {
+    cursor: pointer;
     padding: 10px;
     height: 100px;
     align-items: center;

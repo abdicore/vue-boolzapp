@@ -50,7 +50,7 @@
                       </div></div>
                     <div class="contacts">
                         <ul>
-                            <li v-for="contact in contacts" :key="contact.name">
+                            <li  v-for="(contact,index) in contacts" @click="selectContact(index)">
                                 <img :src="contact.avatar" alt="Avatar di {{ contact.name }}">
                                 {{ contact.name }}
                             </li>
@@ -76,7 +76,7 @@
                     <div class="message-panel">
                         <div class="">
                             <ul>
-                                <li v-for="message in contacts[0].messages"
+                                <li v-for="message in contacts[activeIndex].messages" 
                                 :class="{'sent': message.status === 'sent', 'received': message.status === 'received'}">
                                 <p>{{ message.message }}
                                     <span>{{ message.date }}</span>
